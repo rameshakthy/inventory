@@ -4,10 +4,12 @@ Hi <h1> Vinith </h1>
 <html>
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+  $(document).ready(function() {
   $('#button').on('click', function() {
    var randomColorChange = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
     $('.body-class').css('background-color', randomColorChange);
     });
+   });
   </script>
 <meta charset=utf-8 />
 <title>JS Bin</title>
